@@ -3,3 +3,10 @@
 <p>Apellido->{{ apellido }}</p>
 <p>Edad ->{{ edad }}</p>
 <p>Dirección -> {{ getDirec() }}</p>
+
+<div (keyup)="0">
+  <label for="">Template reference Variable</label>
+  <input #entrada type="text">
+  {{ entrada.value }}
+
+</div>
