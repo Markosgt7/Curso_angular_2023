@@ -12,13 +12,17 @@
       </button>
       <p>{{ mensaje }}</p>
       <app-persona></app-persona>
-      <label for="">Titulo persona</label>
+      <label for="">Event Binding Dos</label>
       <input
         type="text"
         class="form-control"
         (input)="modificarTitulo($event)"
       />
       {{ titulo }}
+      <br>
+      <label for="">Two way Binding </label>
+      <input type="text" class="form-control" [(ngModel)]="titulodos" />
+      {{ titulodos }}
     </div>
   </div>
 </div>

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonaComponent } from './persona/persona.component';
 import { PersonasComponent } from './personas/personas.component';
+import { FormsModule } from '@angular/forms';//se agrego para poder usar el two way binding
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PersonasComponent } from './personas/personas.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule//se importa para poder usar el two way binding
   ],
   providers: [],
   bootstrap: [AppComponent]
