@@ -10,8 +10,15 @@
       >
         Agregar Persona
       </button>
-      <p>{{ mensaje }} </p>
+      <p>{{ mensaje }}</p>
       <app-persona></app-persona>
+      <label for="">Titulo persona</label>
+      <input
+        type="text"
+        class="form-control"
+        (input)="modificarTitulo($event)"
+      />
+      {{ titulo }}
     </div>
   </div>
 </div>
