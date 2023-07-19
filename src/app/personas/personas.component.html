@@ -10,7 +10,12 @@
       >
         Agregar Persona
       </button>
-      <p *ngIf="mostrar">{{ mensaje }} con el titulo de  {{ titulo}}</p>
+      <p *ngIf="mostrar; else sinPersona">
+        {{ mensaje }} con el titulo de {{ titulo }}
+      </p>
+      <ng-template #sinPersona>
+        <p>no se a agregado ninguna persona</p>
+      </ng-template>
 
       <app-persona></app-persona>
       <label for="">Event Binding Dos</label>
@@ -20,7 +25,7 @@
         (input)="modificarTitulo($event)"
       />
       {{ titulo }}
-      <br>
+      <br />
       <label for="">Two way Binding </label>
       <input type="text" class="form-control" [(ngModel)]="titulodos" />
       {{ titulodos }}
