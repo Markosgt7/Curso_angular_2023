@@ -8,6 +8,7 @@ import { PersonasComponent } from './personas/personas.component';
 import { FormsModule } from '@angular/forms';//se agrego para poder usar el two way binding
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { ListadoPersonasComponent } from './components/listado-personas/listado-personas.component';
+import { ListaPersonaComponent } from './components/listado-personas/lista-persona/lista-persona.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListadoPersonasComponent } from './components/listado-personas/listado-
     PersonaComponent,
     PersonasComponent,
     CalculatorComponent,
-    ListadoPersonasComponent
+    ListadoPersonasComponent,
+    ListaPersonaComponent
   ],
   imports: [
     BrowserModule,
