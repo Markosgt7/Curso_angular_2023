@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';//se agrego para poder usar el two 
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { ListadoPersonasComponent } from './components/listado-personas/listado-personas.component';
 import { ListaPersonaComponent } from './components/listado-personas/lista-persona/lista-persona.component';
+import { FormularioComponent } from './components/listado-personas/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ListaPersonaComponent } from './components/listado-personas/lista-perso
     PersonasComponent,
     CalculatorComponent,
     ListadoPersonasComponent,
-    ListaPersonaComponent
+    ListaPersonaComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
