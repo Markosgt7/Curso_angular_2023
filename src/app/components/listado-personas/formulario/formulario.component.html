@@ -9,7 +9,7 @@
           id="nombre"
           name="nombre"
           placeholder="nombre"
-          [(ngModel)]="nombreInput"
+          #nombreInput
         />
       </div>
     </div>
@@ -22,7 +22,7 @@
           id="apellido"
           name="apellido"
           placeholder="apellido"
-          [(ngModel)]="apellidoInput"
+          #apellidoInput
         />
       </div>
     </div>
@@ -30,7 +30,7 @@
       <button
         type="submit"
         class="btn btn-primary mt-4"
-        (click)="agregarPersona()"
+        (click)="agregarPersona(nombreInput, apellidoInput)"
       >
         Agregar Persona
       </button>

@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./resultado.component.css']
 })
 export class ResultadoComponent {
-  resultado: number = 0;
-  
-  procesarResultado(resultado: number){
-    this.resultado = resultado;
-  }
+ 
 }

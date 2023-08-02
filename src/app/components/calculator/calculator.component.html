@@ -2,31 +2,8 @@
   <div class="row justify-content-center">
     <div class="col-lg-8">
       <h1>Aplicación de Calculadora</h1>
-      <div class="mb-3">
-        <label for="num1" class="form-label">Operando A</label>
-        <input
-          type="number"
-          id="num1"
-          name="num1"
-          class="form-control"
-          placeholder="Ingrese el primer numero"
-          [(ngModel)]="num1"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="num2" class="form-label">Operando B</label>
-        <input
-          type="number"
-          class="form-control"
-          name="num2"
-          id="num2"
-          placeholder="Ingrese otro numero"
-          [(ngModel)]="num2"
-        />
-      </div>
-      <button type="button" class="btn btn-primary" (click)="sumar()">
-        Sumar
-      </button>
+      <app-formulario       
+      ></app-formulario>
       <p>Resultado {{ resultado }}</p>
     </div>
     <!-- fin -->
